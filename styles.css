@@ -35,7 +35,6 @@ body {
 
 .btn-1 {
   border-radius: 20px;
-  position: relative;
   padding: 10px;
   border: none;
   background-color: rgb(1, 1, 154);
@@ -57,12 +56,13 @@ body {
   color: rgb(255, 212, 69);
   display: flex;
   align-items: center;
+  gap: 20px;
   justify-content: space-between;
   padding: 10px 0px 10px 10px;
 
 }
 
-.left{
+.left {
   position: absolute;
   margin: 50px;
   display: flex;
@@ -70,31 +70,36 @@ body {
   align-items: center;
 }
 
-.p-1 {
+.para-1 {
   font-size: 2rem;
   font-weight: bolder;
+  color: rgb(255, 212, 69);
 }
 
-.p-2 {
+.para-2 {
   font-size: 4rem;
   color: white;
   text-shadow: 2px 0px 10px white;
 }
 
-.p-3 {
+.para-3 {
   padding: 5px;
   font-size: 2rem;
   letter-spacing: 2px;
   color: #ffffff;
 }
 
-.p-4 {
+.para-4 {
   padding: 10px;
   font-size: 1.8rem;
   font-weight: bolder;
 }
 
-.p-6 {
+.para-5 {
+  color: white;
+}
+
+.para-6 {
   font-size: 1.5rem;
   padding: 1.5rem 0 0 0;
   color: #ffffff;
@@ -102,7 +107,7 @@ body {
   cursor: pointer;
 }
 
-.p-6>span {
+.para-6>span {
   margin: 0 20px 0 0;
 }
 
@@ -187,13 +192,13 @@ li span {
 
 
 /* ........about.................... */
-.third {
+.about {
   padding: 25px;
   height: auto;
   background-color: #ffffff;
 }
 
-.third-content {
+.about-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -205,7 +210,7 @@ li span {
   width: 30rem;
 }
 
-.content-line {
+.innerAbout-1 {
   background-color: black;
   padding: 0px;
   margin: 50px;
@@ -218,20 +223,20 @@ li span {
   margin-top: 100px;
 }
 
-.innerPara-1 {
+.innerp-1 {
   padding: 20px;
   font-weight: bold;
   letter-spacing: .125rem;
   word-wrap: break-word;
 }
 
-.list {
+.innerAbout-2 {
   margin-left: 50px;
   display: flex;
   justify-items: center;
 }
 
-.list-content {
+.innerp-2 {
   text-align: left;
   margin: 10px;
   font-size: 1.5rem;
@@ -293,6 +298,12 @@ li span {
   height: 15rem;
   margin: 10px;
   background-color: #ffffff;
+
+}
+
+.benefit-1:hover {
+  box-shadow: 2px 5px 10px rgba(223, 223, 223, 0.875);
+  cursor: pointer;
 }
 
 .icon-2 {
@@ -338,20 +349,25 @@ li span {
   font-weight: bolder;
   width: 20rem;
   height: 3rem;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.inner-footer:hover{
-  background-color:#ffffff;
+
+.inner-footer:hover {
+  background-color: #ffffff;
   border: 1px solid black;
 }
+
 a {
   text-decoration: none;
 }
-.p-1{
+
+.p-1 {
   color: black;
+  padding: 5px;
 }
 
 .p-2-1 {
@@ -361,170 +377,234 @@ a {
 
 @media all and (max-width: 1250px) {
   html {
-      font-size: 80%;
+    font-size: 80%;
   }
 
   .nav-content>p {
-      padding: 10px;
+    padding: 10px;
   }
 
   .img-1 {
-      height: 70vh;
+    height: 70vh;
   }
 
   .head {
-      height: 80vh;
+    height: 80vh;
   }
 
   .inner-image {
-      position: absolute;
-      bottom: 20vh;
-      right: 0;
+    position: absolute;
+    bottom: 20vh;
+    right: 0;
 
   }
-  .third {
-      padding: 20px;
+
+  .about {
+    padding: 20px;
   }
+
   .about-image {
-      margin-top: 3rem;
-      height: 60vh;
-      width: 30rem;
+    margin-top: 3rem;
+    height: 60vh;
+    width: 30rem;
   }
+
   .logo {
-      margin-top: 80px;
+    margin-top: 80px;
   }
 }
 
 @media all and (max-width: 800px) {
   html {
-      font-size: 60%;
+    font-size: 60%;
+  }
+
+  .btn-1 {
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   .img-1 {
-      height: 60vh;
+    height: 60vh;
   }
 
   .head {
-      height: 80vh;
+    height: 80vh;
 
   }
 
   .left {
-      margin: 0px;
+    margin: 0px;
   }
 
   .inner-image {
-      position: absolute;
-      bottom: 20vh;
-      right: 0;
+    position: absolute;
+    bottom: 20vh;
+    right: 0;
   }
-  .content-line{
-      margin: 15px;
- }
- .third{
-  padding: 15px;
-}
- .about-image {
-  margin-top: 4rem;
-  height: 45vh;
-  width: 25rem;
-}
-.logo {
-  margin-top: 60px;
-}
+
+  .innerAbout-1 {
+    margin: 15px;
+  }
+
+  .about {
+    padding: 15px;
+  }
+
+  .about-image {
+    margin-top: 4rem;
+    height: 45vh;
+    width: 25rem;
+  }
+
+  .logo {
+    margin-top: 60px;
+  }
 }
 
 @media all and (max-width: 600px) {
   html {
-      font-size: 50%;
+    font-size: 45%;
   }
 
   .nav-content>p {
-      padding: 5px;
+    padding: 5px;
   }
 
   .img-1 {
-      height: 50vh;
+    height: 50vh;
   }
 
   .head {
-      height: 70vh;
-      margin: 0px;
+    height: 70vh;
+    margin: 0px;
   }
 
   .inner-image {
-      position: absolute;
-      bottom: 30vh;
-      right: 0;
+    position: absolute;
+    bottom: 30vh;
+    right: 0;
   }
 
   .logo {
-      width: 80%;
+    width: 80%;
   }
+
   .about-image {
-      margin-top: 7rem;
-      height: 37vh;
-      width: 25rem;
+    margin-top: 7rem;
+    height: 37vh;
+    width: 25rem;
   }
-  .third{
-      padding: 10px;
+
+  .about {
+    padding: 10px;
   }
+
   .logo {
-      margin-top: 40px;
+    margin-top: 40px;
   }
+
   .benefit-1 {
-      padding: 10px;
-      width: 22rem;
-      height: 22rem;
-      margin: 20px;
+    padding: 10px;
+    width: 22rem;
+    height: 22rem;
+    margin: 20px;
   }
+
   .icon-2 {
-      margin: 2px;
-      padding: 2px;
+    margin: 2px;
+    padding: 2px;
   }
+
   .card-para {
-      margin: 5px;
+    margin: 5px;
+  }
+
+  .para-name {
+    gap: 30px;
   }
 }
 
 @media all and (max-width: 470px) {
   html {
-      font-size: 30%;
+    font-size: 35%;
   }
 
   .img-1 {
-      height: 35vh;
-      width: 22rem;
+    height: 35vh;
+    width: 22rem;
   }
 
   .btn-1 {
-      padding: 5px;
+    padding: 5px;
   }
 
-  .head{
-      height: 40vh;
-      margin: 0px;
+  .head {
+    height: 40vh;
+    margin: 0px;
   }
 
   .inner-image {
-      position: absolute;
-      bottom: 60vh;
-      right: 0;
+    position: absolute;
+    bottom: 60vh;
+    right: 0;
 
   }
-  .third{
-      padding: 0px;
+
+  .about {
+    padding: 0px;
   }
+
   .about-image {
-      margin-top: 1.5rem;
-      height: 33vh;
-      width: 25rem;
+    margin-top: 1.5rem;
+    height: 33vh;
+    width: 25rem;
   }
+
   .logo {
-      margin-top: 20px;
+    margin-top: 20px;
   }
+
   .icon-2 {
-      margin: 5px;
-      padding: 3px;
+    margin: 5px;
+    padding: 3px;
   }
+
+  .para-name {
+    gap: 15px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  html {
+    font-size: 25%;
+  }
+
+  .img-1 {
+    height: 30vh;
+    width: 20rem;
+  }
+
+  .btn-1 {
+    padding: 3px;
+  }
+
+  .head {
+    height: 35vh;
+    margin: 0px;
+  }
+
+  .inner-image {
+    position: absolute;
+    bottom: 65vh;
+    right: 0;
+
+  }
+
+  .para-name {
+    gap: 5px;
+  }
+
 }
